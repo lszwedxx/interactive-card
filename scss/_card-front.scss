@@ -1,0 +1,76 @@
+.card-front{
+    position:absolute;
+    top:52%;
+    left:5%;
+    right:25%;
+    color:#fff;
+    @media (min-width:586px){
+        top:51%;
+    }
+    @media(min-width:1440px){
+        top:24%;
+        left:25%;
+        width: 100%;
+    }
+    @media(min-width: 1740px){
+        top:18%;
+    }
+    svg{
+        position:absolute;
+        left: 8%;
+        top:11%;
+    }
+    &__image{
+        max-width: 100%;
+        @media(min-width:1440px){
+            width: 100%;
+        }
+}   &__number{
+    position:absolute;
+    top:50%;
+    left:5vw;
+    font-size: 3.5vw;
+    letter-spacing: 1.2vw;
+    @media (min-width:450px){
+        letter-spacing: 1.1vw;
+        padding-inline:1.5vw;
+        font-size: 3.6vw;
+    }
+    @media (min-width:585px){
+        font-size: 21px;
+        left:12px;
+        padding-inline:22px;
+        letter-spacing: 6px;
+    }
+    @media(min-width: 1740px){
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+}
+    &__name{
+        position:absolute;
+        top:70%;
+        left:4.5vw;
+        font-size: 3vw;
+        text-transform: uppercase;
+        @media (min-width:450px){
+            font-size: 14px;
+            left:6vw;
+        }
+        @media (min-width:585px){
+            font-size: 16px;
+            left:35px;
+        }
+    }
+    &__date{
+        position:absolute;
+        top:70%;
+        right:6vw;
+        font-size: 3vw;
+        @media (min-width:585px){
+            font-size: 16px;
+            left:null;
+            right: 35px;
+        }
+    }
+}

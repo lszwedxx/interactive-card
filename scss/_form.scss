@@ -1,0 +1,56 @@
+.form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 90%;
+margin: 20vw auto;
+// display: none;
+@media(min-width:585px){
+    width:500px;
+    margin: 120px auto;
+}
+&__input-month{
+    flex:45%;
+}
+&__input-year{
+    flex:45%;
+}
+input{
+    width:100%;
+    padding:1em;
+    border:1px solid rgb(197, 197, 197);
+    border-radius:10px;
+    box-shadow: 2px 2px 2px rgb(26, 0, 0);
+    @media(min-width: 1740px){
+        margin-block:.5rem;
+    }
+}
+.notMatch{
+    border: 3px solid rgb(180, 0, 0)
+}
+&__label{
+    font-size: 0.8rem;
+    padding-block:1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    @media(min-width: 1440px){
+        font-size: .9rem;
+    }
+    @media(min-width: 1740px){
+        font-size: 1rem;
+    }
+}
+&__input-cont{
+    display: flex;
+    gap:0px 10px;
+    &-date{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:0 10px;
+    }    &-date:nth-of-type(1){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+}

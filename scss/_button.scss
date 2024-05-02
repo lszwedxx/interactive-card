@@ -1,0 +1,20 @@
+.submit{
+    background-color:rgb(54, 2, 54);
+    color:#ffffff;
+    font-size: 20px;
+    margin-top: 1rem;
+    padding:1rem;
+    border-radius:10px;
+    box-shadow: 7px 5px 10px rgb(26, 0, 0);
+    transition: .3s;
+    &:hover{
+        font-size: 23px;
+        background: lighten(rgb(54, 2, 54), 3%);
+        transform:scale(.95);
+        transition: .3s;
+    }
+}
+.submit--completed{
+    display: block;
+    width: 100%;
+}

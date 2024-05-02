@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+      <div class="gradient-bg">
+        <div class="cont">
+          <div class="card-back">
+            <img class="card-back__image" src="./images/bg-card-back.png" alt="">
+            <p class="card-back__cvc">000</p>
+        </div>
+        <div class="card-front">
+            <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+            <img class="card-front__image" src="./images/bg-card-front.png" alt="image card front">
+            <p class="card-front__number">0000 0000 0000 0000</p>
+            <p class="card-front__name">Jane Appleseed</p>
+            <p class="card-front__date"><span class="card-front__month">00</span>/<span class="card-front__year">00</span></p>
+        </div>
+        </div>
+      </div>
+        <form action="" class="form">
+          <label class="form__label" for="name">Cardholder Name</label>
+          <input class="form__input-name" id="name" type="text"   data-input-type="name" placeholder="e.g. Jane Appleseed" maxlength="25">
+          <p class="form__input-name--error error"></p>
+          <label class="form__label" for="card-number">Card Number</label>
+          <input class="form__input-number" id="card-number" type="text" data-input-type="number" minlength="16" maxlength="19"  data-input-type="number" placeholder="e.g. 1234 5678 9123 0000">
+          <p class="form__input-number--error error"></p>
+          <div class="form__input-cont">
+            <div>
+              <p class="form__label">Exp. Date (MM/YY)</p>
+              <div class="form__input-cont-date">
+                <input class ="form__input-month" id="month" type="number" data-input-type="month" 
+                required placeholder="MM">
+                <input class ="form__input-year" id="year" type="number" data-input-type="year" required placeholder="YY">
+                <p class="form__input-date--error error"></p>
+              </div>
+            </div>
+            <div class="form__input-cont-date">
+              <label class ="form__label" for="cvc">  CVC</label>
+              <input class ="form__input-cvc" id="cvc" type="number" data-input-type="cvc" minlength="3" maxlength="3" required placeholder="e.g. 123">
+              <p class="form__input-cvc--error error"></p>
+            </div>
+          </div>
+          <button class="submit">Confirm</button>
+        </form>
+        <section class="completed">
+          <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+          <h1>THANK YOU!</h1>
+          <p>We've added your card details</p>
+          <button type="button" class="submit submit--completed">Continue</button>
+        </section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/lszwedxx">lszwedxx</a>.
+      </div>
+  </main>
+  <script src="./js/index.js"></script>
+</body>
+</html>

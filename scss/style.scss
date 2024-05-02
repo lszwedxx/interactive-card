@@ -1,0 +1,54 @@
+@import "./reset";
+@import "./gradient-bg";
+@import "./card-back";
+@import "./card-front";
+@import "./form";
+@import "./button.scss";
+@import "./completed.scss";
+main{
+position:relative;
+height:100vh;
+    @media(min-width:1440px){
+        display: flex;
+    }
+}
+.cont{
+    position:relative;
+    height:100%;
+    @media(min-width: 585px){
+        width:560px;
+        margin:0 auto;
+    }
+    @media(min-width: 1440px){
+        width:450px;
+    }
+    @media(min-width: 1740px){
+        min-width:560px;
+    }
+}
+.attribution{
+    @media(min-width: 1440px){
+        display: block;
+        position: absolute;
+        right:0;
+        bottom:0;
+    }
+}
+.error{
+    display: none;
+}
+.visible{
+    display: block;
+    font-size: 0.8rem;
+    padding:.5em;
+    color: rgb(180, 0, 0)
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
